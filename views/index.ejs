@@ -498,12 +498,10 @@
                 window.open(url, '_blank').focus();
             }
             function toggle(a){
-                        console.log(a)
                         var button = document.getElementById(a)
                         dress = a
                         var activee = document.getElementsByClassName('ui toggle button active')
                         var active = document.getElementsByClassName('ui toggle button active').length
-                        console.log(activee)
                         if (active != 0) {
                             console.log(activee[0].classList.toggle('active'))
                         } else {
@@ -511,7 +509,6 @@
                         }
                     }
             function ttoggle(a){
-                        console.log(a)
                         size = a
                         var button = document.getElementById(a)
                         
@@ -519,27 +516,22 @@
                         button.classList.toggle('active')
                     }
             function tttttoggle(a){
-                        console.log(a)
                         answers5 = a.value
                         var active = document.getElementsByClassName('column ui z toggle button m-2 active').length
                         var activee = document.getElementsByClassName('column ui z toggle button m-2 active')
-                        console.log(activee)
                         if (active != 0) {
                             activee[0].classList.toggle('active')
                         } else {
                             a.classList.toggle('active')   
                      
                         }
-                        console.log(answers5)
                     }
             function tttoggle(a){
-                console.log(a)
                         var button = document.getElementById(a)
                         s2 = a
             
                         var activee = document.getElementsByClassName('ui toggle button a active ')
                         var active = document.getElementsByClassName('ui toggle button a active').length
-                        console.log(activee)
                         if (active != 0) {
                             activee[0].classList.toggle('active')
                         } else {
@@ -548,13 +540,10 @@
                         }
                     }
             function toooggle(a){
-                console.log(a)
                         var button = document.getElementById(a)
                         s7 = button.textContent
-                        console.log(s7)
                         var activee = document.getElementsByClassName('ui toggle button 3 active ')
                         var active = document.getElementsByClassName('ui toggle button 3 active').length
-                        console.log(activee)
                         if (active != 0) {
                             activee[0].classList.toggle('active')
                         } else {
@@ -563,14 +552,10 @@
                         }
                     }
             function ttttoggle(a){
-                console.log(a)
                         var button = document.getElementById(a)
                         s3 = button.textContent
-                        console.log(s2)
-                        console.log(s3)
                         var activee = document.getElementsByClassName('ui toggle button b active ')
                         var active = document.getElementsByClassName('ui toggle button b active').length
-                        console.log(activee)
                         if (active != 0) {
                             activee[0].classList.toggle('active')
                         } else {
@@ -579,7 +564,6 @@
                         }
                     }
             function tooggle(a){
-                console.log(a)
                         var button = document.getElementById(a)
                         var listitem = button.textContent
                         answers7.push(listitem)
@@ -619,7 +603,6 @@ const step6 = document.getElementById('step6')
                         
                         var answer = document.getElementById(size)
                             answers2 = answer.textContent
-                            console.log(answers2)
                         }
             function last(a){
                 var button = document.getElementById(a)
@@ -629,15 +612,12 @@ const step6 = document.getElementById('step6')
                         if (answers7.length == 0) {
                             answers7.push('no')
                         }
-                        console.log(answers7)
                         alert('Note: Everything stated above is a rough estimation of outcomes for the purpose of reaching more ideas to customers. After final step of virtual upcycling process you will be directed to the UPCYCLING ARTIST')
                         gotowhatsapp()
 
                         }
             function next(a){
-                console.log(a)
                 var button = document.getElementById(a)
-                console.log(button)
                         var parent = document.getElementById('01')
                         var votedchild = parent.getElementsByClassName("ui toggle button active").length
                             if (votedchild == 1){
@@ -655,10 +635,8 @@ const step6 = document.getElementById('step6')
                             }
                         
                         var test = <%- JSON.stringify(moviesList) %>
-                        console.log(dress)
                         var answer = document.getElementById(dress)
                             answers1 = answer.textContent
-                            console.log(answers1)
                             var stage1 = test[dress].stage1
                             var container = document.getElementById('s1');
                             container.innerHTML = ""
@@ -692,10 +670,8 @@ const step6 = document.getElementById('step6')
                             }
                         
                         var test = <%- JSON.stringify(moviesList) %>
-                        console.log(s2)
                         var answer = document.getElementById(s2)
                             answers3 = answer.textContent
-                            console.log(answers3)
                             var a1 = s2-10
                         var stage2 = test[dress][a1]
 
@@ -727,7 +703,6 @@ const step6 = document.getElementById('step6')
                                 container.classList.toggle('fadeout')
                                 h1.classList.toggle('fadeout')
                                 var stage3 = test[dress].stage3
-                                console.log(stage3)
                                 for (var i = 0; i < stage3.length; i++) {
                                 var button = document.createElement('button');
                                 button.type = 'button';
@@ -750,8 +725,6 @@ const step6 = document.getElementById('step6')
                         var answer = document.getElementById(s3)
                         answers4 = answer.textContent
                         answers8 = s7
-                        console.log(answers4)
-                        console.log(answers8 )
                         document.getElementById('step5').scrollIntoView({
                                     behavior:"smooth"
                                 });
@@ -766,18 +739,13 @@ const step6 = document.getElementById('step6')
                                 step4.classList.toggle('fadeout')
 
                             }
-                console.log(s3)
 
                 }
             function tolast(a){
                 var parent = document.getElementById('03')
                 var votedchild = parent.getElementsByClassName("column ui z toggle button m-2 active").length
-                console.log(parent)
-                console.log(votedchild)
                     if (votedchild == 1){
-                        console.log(a)
                         answers6 = a.value
-                        console.log(answers6)
                         document.getElementById('step6').scrollIntoView({
                                     behavior:"smooth"
                                 });
