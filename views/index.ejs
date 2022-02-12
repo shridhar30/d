@@ -111,13 +111,43 @@
                          <div class="col-lg-8 col-md-10 mx-auto col-12" id="content">
                               <div class="hero-text mt-5 text-center">
                                     <h1 class="text-white" data-aos="fade-up"  style="font-family: 'Playfair Display', serif; font-size: 3rem;" data-aos-delay="500">Welcome to FANGLE</h1>
-                                    <a href="#step1"  class="btn custom-btn bordered btn-lg" data-aos="fade-up" data-aos-delay="700">lets upcycle</a>
+                                    <a href="#step1" id="bounce"  class="btn custom-btn bordered btn-lg" data-aos="fade-up" data-aos-delay="700">lets upcycle</a>
                                    
                               </div>
                          </div>
                     </div>
                </div>
      </section>   
+     <style>
+         #bounce{
+            z-index:1;
+     	   animation: myfirst 2s infinite;
+            -webkit-animation: myfirst 2s infinite;
+         }
+         @-webkit-@keyframes myfirst {
+    
+    0% {
+    transform: scale(1);
+  }
+  50% {
+   transform: scale(1.1);
+  }
+  100% {
+   transform: scale(1);
+  }
+}
+         @keyframes myfirst {  
+                0% {
+                transform: scale(1);
+            }
+            50% {
+            transform: scale(1.15);
+            }
+            100% {
+            transform: scale(1);
+            }
+            }
+     </style>
        <!--classes  -->				
      <div >
 
